@@ -31,7 +31,7 @@ python -u train.py \
   --enc_in 37 \
   --dec_in 37 \
   --c_out 37 \
-  --des 'temp' \
+  --des 'wind' \
   --itr 1 \
   --d_model $d_model \
   --d_ff $d_ff \
