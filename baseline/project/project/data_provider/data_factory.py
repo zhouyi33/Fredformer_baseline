@@ -2,8 +2,7 @@ from data_provider.data_loader import Dataset_Meteorology
 from torch.utils.data import DataLoader
 
 data_dict = {
-    'Meteorology' : Dataset_Meteorology,
-    'Fredformer' : Dataset_Meteorology
+    'Meteorology' : Dataset_Meteorology
 }
 
 

@@ -44,7 +44,7 @@ class Exp_Main(Exp_Basic):
 
     def _build_model(self):
         model_dict = {
-            'FredFormer': FredFormer,
+            'FredFormer': Fredormer,
         }
         model = model_dict[self.args.model].Model(self.args).float()
 

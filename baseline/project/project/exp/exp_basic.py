@@ -1,6 +1,6 @@
 import os
 import torch
-from models import iTransformer
+from models import iTransformer, TimeMixer
 from models import Fredformer
 
 class Exp_Basic(object):
@@ -8,7 +8,8 @@ class Exp_Basic(object):
         self.args = args
         self.model_dict = {
             'iTransformer': iTransformer,
-            'Fredformer': Fredformer
+            'Fredformer': Fredformer,
+            'TimeMixer': TimeMixer
         }
         self.device = self._acquire_device()
         self.model = self._build_model().to(self.device)
